@@ -6,63 +6,81 @@
 }
 
 body {
-  background: #0b0f1a;
-  color: #ffffff;
+  background: radial-gradient(circle at top, #0b1220, #050814);
+  color: #e5e7eb;
   line-height: 1.6;
 }
 
 /* HEADER */
 header {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #0b0f1a, #0f1b33);
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #0b1220, #0f1b33);
   border-bottom: 1px solid #1f2a44;
 }
 
 header h1 {
-  font-size: 42px;
+  font-size: 48px;
   color: #4da3ff;
-  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 header p {
-  color: #cbd5e1;
+  margin-top: 10px;
   font-size: 18px;
+  color: #cbd5e1;
 }
 
 header a {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
+  margin-top: 25px;
+  padding: 12px 26px;
   background: #4da3ff;
   color: #000;
+  border-radius: 10px;
   text-decoration: none;
-  border-radius: 8px;
   font-weight: 600;
+  transition: 0.2s;
+}
+
+header a:hover {
+  transform: scale(1.05);
+  background: #66b3ff;
 }
 
 /* SECTIONS */
 section {
-  padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
+  padding: 70px 20px;
 }
 
 h2 {
+  font-size: 30px;
   color: #4da3ff;
   margin-bottom: 20px;
-  font-size: 28px;
 }
 
-/* LIST */
+/* SERVICES */
 ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
   list-style: none;
 }
 
 ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid #1f2a44;
-  color: #cbd5e1;
+  background: #0f1b33;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #1f2a44;
+  transition: 0.2s;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+  border-color: #4da3ff;
 }
 
 /* KONTAKT */
@@ -74,8 +92,8 @@ ul li {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
-  border-top: 1px solid #1f2a44;
+  padding: 40px;
   color: #64748b;
-  margin-top: 40px;
+  border-top: 1px solid #1f2a44;
+  margin-top: 50px;
 }
