@@ -1,1 +1,81 @@
-/* ØB Rigg & Crew */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b0f1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0b0f1a, #0f1b33);
+  border-bottom: 1px solid #1f2a44;
+}
+
+header h1 {
+  font-size: 42px;
+  color: #4da3ff;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #4da3ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #4da3ff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #1f2a44;
+  color: #cbd5e1;
+}
+
+/* KONTAKT */
+#kontakt p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #1f2a44;
+  color: #64748b;
+  margin-top: 40px;
+}
