@@ -97,3 +97,41 @@ footer {
   border-top: 1px solid #1f2a44;
   margin-top: 50px;
 }
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #0f1b33, #050814);
+  padding: 40px 20px;
+}
+
+.hero-inner h1 {
+  font-size: 60px;
+  color: #4da3ff;
+  font-weight: 800;
+}
+
+.hero-inner p {
+  margin-top: 15px;
+  color: #cbd5e1;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.hero-inner a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #4da3ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.hero-inner a:hover {
+  transform: scale(1.05);
+}
