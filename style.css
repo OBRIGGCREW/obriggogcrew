@@ -1,4 +1,7 @@
 body {
+  background: radial-gradient(circle at top, #0b1220, #050814);
+  color: #e5e7eb;
+}
   
 }
 * {
