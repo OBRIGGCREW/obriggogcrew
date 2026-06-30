@@ -60,35 +60,36 @@ ul li {
   border-bottom: 1px solid #1f2a44;
 }
 .hero {
+  text-align: center;
   padding: 120px 20px;
 }
 
 .hero h1 {
-  font-size: 60px;
-  letter-spacing: 1px;
+  font-size: 56px;
+  color: #4da3ff;
+  font-weight: 800;
+  letter-spacing: 0;
+  transform: none !important;
 }
 
 .hero p {
-  font-size: 18px;
   margin-top: 15px;
+  font-size: 18px;
   color: #cbd5e1;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  transform: none !important;
 }
 
 .hero a {
-  margin-top: 25px;
   display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
   background: #4da3ff;
   color: black;
-  padding: 12px 26px;
-  border-radius: 12px;
   text-decoration: none;
+  border-radius: 10px;
   font-weight: 600;
-  transition: 0.2s;
-}
-
-.hero a:hover {
-  transform: scale(1.05);
+  transform: none !important;
 }
