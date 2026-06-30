@@ -93,3 +93,23 @@ ul li {
   font-weight: 600;
   transform: none !important;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #0f1b33;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2a44;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #4da3ff;
+}
