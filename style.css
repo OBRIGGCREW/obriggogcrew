@@ -195,3 +195,36 @@ h2 {
   margin: 10px 0;
   font-size: 18px;
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  color: #4da3ff;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #4da3ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
