@@ -97,3 +97,60 @@ footer {
   border-top: 1px solid #1f2a44;
   margin-top: 50px;
 }
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top, #0f1b33, #050814);
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  color: #4da3ff;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 600px;
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn.primary {
+  background: #4da3ff;
+  color: black;
+}
+
+.btn.primary:hover {
+  transform: scale(1.05);
+}
+
+.btn.ghost {
+  border: 1px solid #4da3ff;
+  color: #4da3ff;
+}
+
+.btn.ghost:hover {
+  background: #4da3ff;
+  color: black;
+}
