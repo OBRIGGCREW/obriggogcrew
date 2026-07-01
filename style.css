@@ -1,3 +1,6 @@
+body {
+  background: purple !important;
+}
 * {
   margin: 0;
   padding: 0;
