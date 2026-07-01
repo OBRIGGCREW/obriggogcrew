@@ -299,7 +299,6 @@
 
 </footer>
 <script>
-  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener("click", e => {
       e.preventDefault();
@@ -308,26 +307,26 @@
     });
   });
 
-  // Scroll reveal (mer Apple-like)
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.2 });
 
-  document.querySelectorAll(".card, .section h2, .section p").forEach(el => {
-    el.classList.add("hidden");
-    observer.observe(el);
-  });
+  document.querySelectorAll(".card, .section h2, .section p, .hero-content")
+    .forEach(el => {
+      el.classList.add("hidden");
+      observer.observe(el);
+    });
 
-  // subtle parallax glow
   window.addEventListener("scroll", () => {
     const glow = document.querySelector(".bg-glow");
     if (glow) {
+      const y = window.scrollY;
       glow.style.transform =
-        `translate(-50%, calc(-50% + ${window.scrollY * 0.15}px))`;
+        `translate(-50%, calc(-50% + ${y * 0.12}px)) scale(1)`;
     }
   });
 </script>
