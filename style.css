@@ -368,3 +368,13 @@ html, body {
 .hero {
   overflow: hidden;
 }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(10,132,255,0.12), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(120,80,255,0.10), transparent 55%);
+  pointer-events: none;
+  z-index: -1;
+}
