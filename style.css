@@ -823,3 +823,81 @@ nav a:hover{
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== HERO OVERLAY (cinematic feel) ===== */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 60%);
+  z-index: 1;
+}
+
+/* ===== HERO TEXT UPGRADE ===== */
+.hero h1 {
+  font-size: 64px;
+  letter-spacing: -2px;
+  line-height: 1.05;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.75;
+  margin-top: 18px;
+}
+
+/* ===== BUTTONS APPLE STYLE ===== */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.btn.secondary:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* ===== MORE AIR (Apple spacing) ===== */
+.section {
+  padding: 180px 20px;
+}
+
+/* ===== CARD UPGRADE (premium glass) ===== */
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 28px;
+  padding: 40px;
+  width: 320px;
+  backdrop-filter: blur(25px);
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-14px) scale(1.03);
+  background: rgba(255,255,255,0.06);
+}
+
+/* ===== NAVBAR POLISH ===== */
+.navbar {
+  padding: 20px 50px;
+}
+
+.navbar span {
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+
+/* ===== SMOOTHER GLOBAL FEEL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
