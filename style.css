@@ -18,6 +18,9 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+h1, h2, h3 {
+  color: rgba(255, 255, 255, 0.98);
+}
 /* NAV */
 .nav {
   position: fixed;
