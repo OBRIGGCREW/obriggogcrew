@@ -55,3 +55,8 @@ document.querySelectorAll(".box").forEach((box) => {
 });
 
 console.log("ØB Rigg & Crew — Level 7 loaded");
+window.addEventListener("load", () => {
+  document.querySelectorAll(".hidden").forEach(el => {
+    el.classList.add("show");
+  });
+});
