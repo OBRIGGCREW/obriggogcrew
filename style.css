@@ -378,3 +378,11 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+h1, h2 {
+  letter-spacing: -1.8px;
+}
+
+p {
+  line-height: 1.7;
+  font-weight: 400;
+}
