@@ -388,3 +388,6 @@ body::after {
     padding: 140px 20px;
   }
 }
+body {
+  border: 10px solid red !important;
+}
