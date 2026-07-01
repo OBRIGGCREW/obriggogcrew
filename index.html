@@ -9,87 +9,89 @@
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <span>ØB Rigg & Crew</span>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="logo">ØB Rigg & Crew</div>
+
     <nav>
       <a href="#tjenester">Tjenester</a>
-      <a href="#om">Om oss</a>
+      <a href="#om">Om</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-content hidden">
-      <h1>Rigg. Kraft. Presisjon.</h1>
-      <p>Profesjonell rigg- og crew-leveranse til konserter, festivaler og events i hele Norge.</p>
+    <div class="hero-inner hidden">
+      <h1>Rigg. Crew. Presisjon.</h1>
+      <p>Profesjonell produksjon for konserter, festivaler og events i hele Norge.</p>
 
-      <div class="hero-buttons">
-        <a class="primary-btn" href="#tjenester">Se tjenester</a>
-        <a class="secondary-btn" href="#kontakt">Kontakt oss</a>
+      <div class="cta">
+        <a href="#tjenester" class="btn primary">Se tjenester</a>
+        <a href="#kontakt" class="btn ghost">Kontakt oss</a>
       </div>
     </div>
   </section>
 
-  <!-- TJENESTER -->
-  <section class="section" id="tjenester">
-    <h2 class="hidden">Tjenester</h2>
+  <!-- SECTION 1 -->
+  <section id="tjenester" class="section">
+    <div class="container">
+      <h2 class="hidden">Tjenester</h2>
 
-    <div class="cards">
-      <div class="card hidden">
-        <h3>Rigg</h3>
-        <p>Scene, lys og lyd rigg med høy presisjon.</p>
-      </div>
+      <div class="grid">
+        <div class="box hidden">
+          <h3>Rigg</h3>
+          <p>Scene, lys og lyd med presisjon.</p>
+        </div>
 
-      <div class="card hidden">
-        <h3>Crew</h3>
-        <p>Erfarent crew som jobber raskt og sikkert.</p>
-      </div>
+        <div class="box hidden">
+          <h3>Crew</h3>
+          <p>Effektivt og erfarent produksjonsteam.</p>
+        </div>
 
-      <div class="card hidden">
-        <h3>Event support</h3>
-        <p>Full støtte for små og store produksjoner.</p>
+        <div class="box hidden">
+          <h3>Event support</h3>
+          <p>Full teknisk støtte fra start til slutt.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- OM -->
-  <section class="section" id="om">
-    <div class="card hidden">
+  <!-- SECTION 2 -->
+  <section id="om" class="section alt">
+    <div class="container hidden">
       <h2>Om oss</h2>
       <p>
-        ØB Rigg & Crew er et fleksibelt team som leverer profesjonell kvalitet,
-        trygghet og effektivitet på alle typer arrangementer.
+        ØB Rigg & Crew leverer profesjonell eventproduksjon med fokus på kvalitet,
+        sikkerhet og effektiv gjennomføring.
       </p>
     </div>
   </section>
 
-  <!-- KONTAKT -->
-  <section class="section" id="kontakt">
-    <div class="card hidden">
-      <h2>Kontakt</h2>
-      <p>kontakt@obrigg.no</p>
-      <p>+47 000 00 000</p>
+  <!-- CTA SECTION -->
+  <section id="kontakt" class="section">
+    <div class="container center hidden">
+      <h2>Klar for samarbeid?</h2>
+      <p>Ta kontakt for tilbud eller samarbeid.</p>
+
+      <a class="btn primary" href="mailto:kontakt@obrigg.no">Send e-post</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer hidden">
+  <footer class="footer">
     <p>© 2026 ØB Rigg & Crew</p>
   </footer>
 
-  <!-- SCROLL ANIMATION JS -->
+  <!-- ANIMATION -->
   <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("show");
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+    document.querySelectorAll(".hidden").forEach(el => obs.observe(el));
   </script>
 
 </body>
