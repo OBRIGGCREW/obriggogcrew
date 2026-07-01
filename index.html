@@ -297,30 +297,6 @@
 </footer>
 <script>
   // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href"))
-        .scrollIntoView({ behavior: "smooth" });
-    });
-  });
-
-  // Scroll animation (fade in cards/sections)
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll(".card, .section h2, .section p").forEach(el => {
-    el.classList.add("hidden");
-    observer.observe(el);
-  });
-</script>
-<script>
-  // smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener("click", e => {
       e.preventDefault();
@@ -329,12 +305,26 @@
     });
   });
 
-  // parallax glow
+  // Scroll reveal (mer Apple-like)
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll(".card, .section h2, .section p").forEach(el => {
+    el.classList.add("hidden");
+    observer.observe(el);
+  });
+
+  // subtle parallax glow
   window.addEventListener("scroll", () => {
     const glow = document.querySelector(".bg-glow");
     if (glow) {
       glow.style.transform =
-        `translate(-50%, calc(-50% + ${window.scrollY * 0.2}px))`;
+        `translate(-50%, calc(-50% + ${window.scrollY * 0.15}px))`;
     }
   });
 </script>
