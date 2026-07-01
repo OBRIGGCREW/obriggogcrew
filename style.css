@@ -9,7 +9,9 @@ body {
   background: radial-gradient(circle at top, #0b1a2f, #070b14);
   color: white;
 }
-
+body {
+  padding-top: 70px;
+}
 /* NAV */
 .nav {
   position: fixed;
