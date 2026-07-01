@@ -895,3 +895,6 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
 }
+body {
+  overflow-x: hidden;
+}
