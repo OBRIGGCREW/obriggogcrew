@@ -4,112 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ØB Rigg & Crew</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<nav class="nav">
-  <div>ØB Rigg & Crew</div>
-  <div>
-    <a href="#tjenester">Tjenester</a>
-    <a href="#om">Om oss</a>
-    <a href="#kontakt">Kontakt</a>
-  </div>
-</nav>
 
-<section class="hero">
-  <div class="hero-bg"></div>
-
-  <div class="hero-inner hidden">
-    <div class="badge">PROFESJONELL RIGG & CREW</div>
-
-    <h1>Vi bygger opp showet bak scenen.</h1>
-
-    <p>
-      Rigg, scene og crew for konserter, festivaler og events i hele Norge.
-    </p>
-
-    <div class="cta">
-      <a href="#tjenester" class="btn primary">Se tjenester</a>
-      <a href="#kontakt" class="btn ghost">Kontakt oss</a>
-    </div>
-  </div>
-</section>
-
-<section id="tjenester" class="section">
-  <div class="container center hidden">
-    <h2>Tjenester</h2>
-    <p>Alt du trenger for profesjonell event-produksjon</p>
-
-    <div class="grid">
-      <div class="box">Rigging</div>
-      <div class="box">Scene bygg</div>
-      <div class="box">Crew support</div>
-    </div>
-  </div>
-</section>
-
-<section id="om" class="section alt">
-  <div class="container center hidden">
-    <h2>Om oss</h2>
-    <p>
-      Vi er et fleksibelt crew som leverer trygge og effektive løsninger
-      for arrangement over hele landet.
-    </p>
-  </div>
-</section>
-
-<section id="kontakt" class="section">
-  <div class="container center hidden">
-    <h2>Kontakt</h2>
-    <p>Ta kontakt for tilbud eller samarbeid</p>
-    <a class="btn primary" href="mailto:kontakt@obrigg.no">Send e-post</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>© 2026 ØB Rigg & Crew</p>
-</footer>
   <!-- NAV -->
-  <header class="nav">
+  <nav class="nav">
     <div class="logo">ØB Rigg & Crew</div>
 
-    <nav>
+    <div>
       <a href="#tjenester">Tjenester</a>
-      <a href="#om">Om</a>
+      <a href="#om">Om oss</a>
       <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"></div>
+  <section class="hero">
+    <div class="hero-bg"></div>
 
-  <div class="hero-inner hidden">
-    <div class="badge">PROFESJONELL RIGG & CREW</div>
+    <div class="hero-inner hidden">
+      <div class="badge">PROFESJONELL RIGG & CREW</div>
 
-    <h1>Vi bygger showet bak scenen.</h1>
+      <h1>Vi bygger showet bak scenen.</h1>
 
-    <p>
-      ØB Rigg & Crew leverer profesjonell rigging, scene og event-support
-      til konserter og festivaler i hele Norge.
-    </p>
+      <p>
+        Rigg, scene og crew for konserter, festivaler og events i hele Norge.
+      </p>
 
-    <div class="cta">
-      <a href="#tjenester" class="btn primary">Se tjenester</a>
-      <a href="#kontakt" class="btn ghost">Kontakt oss</a>
+      <div class="cta">
+        <a href="#tjenester" class="btn primary">Se tjenester</a>
+        <a href="#kontakt" class="btn ghost">Kontakt oss</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- SECTION 1 -->
+  <!-- TJENESTER -->
   <section id="tjenester" class="section">
-    <div class="container">
-      <h2 class="hidden">Tjenester</h2>
+    <div class="container center hidden">
+
+      <h2>Tjenester</h2>
+      <p>Alt du trenger for profesjonell event-produksjon</p>
 
       <div class="grid">
         <div class="box hidden">
-          <h3>Rigg</h3>
+          <h3>Rigging</h3>
           <p>Scene, lys og lyd med presisjon.</p>
         </div>
 
@@ -123,27 +64,34 @@
           <p>Full teknisk støtte fra start til slutt.</p>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- SECTION 2 -->
+  <!-- OM OSS -->
   <section id="om" class="section alt">
-    <div class="container hidden">
+    <div class="container center hidden">
+
       <h2>Om oss</h2>
       <p>
         ØB Rigg & Crew leverer profesjonell eventproduksjon med fokus på kvalitet,
         sikkerhet og effektiv gjennomføring.
       </p>
+
     </div>
   </section>
 
-  <!-- CTA SECTION -->
+  <!-- KONTAKT -->
   <section id="kontakt" class="section">
     <div class="container center hidden">
+
       <h2>Klar for samarbeid?</h2>
       <p>Ta kontakt for tilbud eller samarbeid.</p>
 
-      <a class="btn primary" href="mailto:kontakt@obrigg.no">Send e-post</a>
+      <a class="btn primary" href="mailto:kontakt@obrigg.no">
+        Send e-post
+      </a>
+
     </div>
   </section>
 
@@ -152,15 +100,19 @@
     <p>© 2026 ØB Rigg & Crew</p>
   </footer>
 
-  <!-- ANIMATION -->
+  <!-- ANIMASJON (LEVEL 7 OBSERVER) -->
   <script>
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add("show");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll(".hidden").forEach(el => obs.observe(el));
+    document.querySelectorAll(".hidden").forEach(el => {
+      observer.observe(el);
+    });
   </script>
 
 </body>
