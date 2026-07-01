@@ -697,9 +697,7 @@ nav a:hover{
 }
 
 /* forbedret hover følelse */
-.card {
-  cursor: pointer;
-}
+
 
 /* bedre mobil */
 @media (max-width: 768px) {
@@ -840,23 +838,9 @@ nav a:hover{
 }
 
 /* ===== CARD UPGRADE (premium glass) ===== */
-.card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 28px;
-  padding: 40px;
-  width: 320px;
-  backdrop-filter: blur(25px);
-  transition: all 0.5s ease;
-}
-
-.card:hover {
-  transform: translateY(-14px) scale(1.03);
-  background: rgba(255,255,255,0.06);
-}
 
 /* ===== NAVBAR POLISH ===== */
-} 
+}
 
 /* ===== SMOOTHER GLOBAL FEEL ===== */
 html {
