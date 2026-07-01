@@ -12,7 +12,6 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <span>ØB Rigg & Crew</span>
-
     <nav>
       <a href="#tjenester">Tjenester</a>
       <a href="#om">Om oss</a>
@@ -22,66 +21,76 @@
 
   <!-- HERO -->
   <section class="hero">
-
-    <div class="hero-content">
+    <div class="hero-content hidden">
       <h1>Rigg. Kraft. Presisjon.</h1>
-      <p>
-        Vi leverer profesjonell rigg- og crew-tjenester til konserter, festivaler og events i hele Norge.
-      </p>
+      <p>Profesjonell rigg- og crew-leveranse til konserter, festivaler og events i hele Norge.</p>
 
       <div class="hero-buttons">
         <a class="primary-btn" href="#tjenester">Se tjenester</a>
         <a class="secondary-btn" href="#kontakt">Kontakt oss</a>
       </div>
     </div>
-
   </section>
 
   <!-- TJENESTER -->
   <section class="section" id="tjenester">
+    <h2 class="hidden">Tjenester</h2>
+
     <div class="cards">
-
-      <div class="card">
+      <div class="card hidden">
         <h3>Rigg</h3>
-        <p>Profesjonell rigging for scene, lys og lyd.</p>
+        <p>Scene, lys og lyd rigg med høy presisjon.</p>
       </div>
 
-      <div class="card">
+      <div class="card hidden">
         <h3>Crew</h3>
-        <p>Erfarent crew for raske og sikre oppsett.</p>
+        <p>Erfarent crew som jobber raskt og sikkert.</p>
       </div>
 
-      <div class="card">
+      <div class="card hidden">
         <h3>Event support</h3>
-        <p>Alt du trenger for et vellykket arrangement.</p>
+        <p>Full støtte for små og store produksjoner.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- OM OSS -->
+  <!-- OM -->
   <section class="section" id="om">
-    <div class="card">
+    <div class="card hidden">
       <h2>Om oss</h2>
       <p>
-        ØB Rigg & Crew er et fleksibelt team som leverer kvalitet, trygghet og effektivitet på alle typer arrangementer.
+        ØB Rigg & Crew er et fleksibelt team som leverer profesjonell kvalitet,
+        trygghet og effektivitet på alle typer arrangementer.
       </p>
     </div>
   </section>
 
   <!-- KONTAKT -->
   <section class="section" id="kontakt">
-    <div class="card">
+    <div class="card hidden">
       <h2>Kontakt</h2>
-      <p>Email: kontakt@obrigg.no</p>
-      <p>Telefon: +47 000 00 000</p>
+      <p>kontakt@obrigg.no</p>
+      <p>+47 000 00 000</p>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2026 ØB Rigg & Crew. Alle rettigheter reservert.</p>
+  <footer class="footer hidden">
+    <p>© 2026 ØB Rigg & Crew</p>
   </footer>
+
+  <!-- SCROLL ANIMATION JS -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
