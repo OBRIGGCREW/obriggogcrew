@@ -319,7 +319,25 @@
     observer.observe(el);
   });
 </script>
+<script>
+  // smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
 
+  // parallax glow
+  window.addEventListener("scroll", () => {
+    const glow = document.querySelector(".bg-glow");
+    if (glow) {
+      glow.style.transform =
+        `translate(-50%, calc(-50% + ${window.scrollY * 0.2}px))`;
+    }
+  });
+</script>
 </body>
 
 </html>
