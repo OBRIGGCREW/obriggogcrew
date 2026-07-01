@@ -85,7 +85,7 @@ body::after{
 
   padding: 0 24px;
 
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.35); /* viktig for glass */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 
