@@ -111,3 +111,95 @@ body {
     font-size: 34px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== PREMIUM SPACING UPGRADE ===== */
+.section {
+  padding: 160px 20px;
+}
+
+/* ===== HERO POLISH ===== */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(10,132,255,0.25), transparent 60%);
+  filter: blur(90px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 6vw, 82px);
+  letter-spacing: -2px;
+  line-height: 1.05;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.75;
+}
+
+/* ===== GLASS NAVBAR UPGRADE ===== */
+.nav {
+  backdrop-filter: blur(25px);
+  background: rgba(0,0,0,0.35);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 9999;
+}
+
+/* ===== PREMIUM CARDS ===== */
+.box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 22px;
+  padding: 35px;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(20px);
+}
+
+.box:hover {
+  transform: translateY(-10px) scale(1.02);
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(10,132,255,0.4);
+}
+
+/* ===== BUTTON UPGRADE ===== */
+.primary {
+  background: linear-gradient(135deg, #0a84ff, #4f9cff);
+  box-shadow: 0 18px 40px rgba(10,132,255,0.25);
+  transition: 0.3s;
+}
+
+.primary:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== SECTION TITLES ===== */
+.section h2 {
+  font-size: 42px;
+  letter-spacing: -1.5px;
+  margin-bottom: 15px;
+}
+
+/* ===== FADE IN SMOOTHER ===== */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
