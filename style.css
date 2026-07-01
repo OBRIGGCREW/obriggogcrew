@@ -361,3 +361,7 @@ h2 {
     padding: 120px 20px;
   }
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
