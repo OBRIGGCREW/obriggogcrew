@@ -445,3 +445,224 @@ nav a:hover{
     margin-bottom:35px;
 
 }
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    margin-top:120px;
+
+    padding:70px 25px 30px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(20px);
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:50px;
+
+}
+
+.footer-logo img{
+
+    width:70px;
+
+    margin-bottom:18px;
+
+}
+
+.footer h3{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.footer h4{
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#cfd8e6;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links a{
+
+    color:#cfd8e6;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#0A84FF;
+
+}
+
+.footer-bottom{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    color:#8ca0b8;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+}
+
+/* ===========================
+   ANIMASJONER
+=========================== */
+
+.hero,
+.intro,
+.highlight,
+.footer{
+
+    animation:fadeUp .9s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:16px;
+
+    }
+
+    .hero h1{
+
+        font-size:44px;
+
+    }
+
+    .intro-card h2{
+
+        font-size:32px;
+
+    }
+
+    .highlight-box{
+
+        padding:35px;
+
+    }
+
+    .highlight-box h2{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+
+        padding:160px 20px 80px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:100%;
+
+        max-width:320px;
+
+        text-align:center;
+
+    }
+
+}
